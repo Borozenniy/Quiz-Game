@@ -1,7 +1,13 @@
+import { NavLink } from 'react-router-dom';
+
 export function Header() {
   return (
-    <div>
+    <header>
       <h1>Header</h1>
-    </div>
+      <nav>
+        <NavLink to='/create_quiz'>Create Quiz</NavLink>
+        <NavLink to='/quizzes'>Quizzes</NavLink>
+      </nav>
+    </header>
   );
 }

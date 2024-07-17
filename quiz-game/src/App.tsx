@@ -2,6 +2,10 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { AppLayout } from './ui/AppLayout';
 import { Home } from './ui/Home';
 import { Error } from './ui/Error';
+import { Quizzes } from './components/quiz/Quizzes';
+import { QuizItem } from './components/quiz/QuizItem';
+import { CreateQuiz } from './components/quiz/CreateQuiz';
+import { Quiz } from './components/quiz/Quiz';
 import './App.css';
 
 const router = createBrowserRouter([
@@ -13,18 +17,25 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />,
       },
+      {
+        path: '/create_quiz',
+        element: <CreateQuiz />,
+      },
+      {
+        path: '/quizzes',
+        element: <Quizzes />,
+        children: [],
+      },
+      {
+        path: '/quiz:id',
+        element: <Quiz />,
+      },
     ],
   },
 ]);
 
 function App() {
-  return (
-    <RouterProvider router={router}>
-      <div>
-        <h1>Welcome to Quiz Game</h1>
-      </div>
-    </RouterProvider>
-  );
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;
