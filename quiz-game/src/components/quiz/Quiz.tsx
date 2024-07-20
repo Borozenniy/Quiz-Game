@@ -1,8 +1,8 @@
-import { useParams } from 'react-router-dom';
+//import { useParams } from 'react-router-dom';
 
 export function Quiz() {
-  const quiz = useParams();
-  console.log(quiz);
+  //const quiz = useParams();
+  //console.log(quiz);
 
   return (
     <div>

@@ -1,4 +1,5 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { QuizContextProvider } from './components/context/QuizContext';
 import { AppLayout } from './ui/AppLayout';
 import { Home } from './ui/Home';
 import { Error } from './ui/Error';
@@ -35,7 +36,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router}></RouterProvider>;
+  return (
+    <>
+      <QuizContextProvider>
+        <RouterProvider router={router}></RouterProvider>;
+      </QuizContextProvider>
+    </>
+  );
 }
 
 export default App;
