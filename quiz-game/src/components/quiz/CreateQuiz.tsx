@@ -185,36 +185,10 @@ export function CreateQuiz() {
           <CreateQuestion
             setQuestions={setQuestions}
             questions={questions}
-            //createQuiz={createQuiz}
             addNewQuiz={addNewQuiz}
             setCurrentQuizStatus={setCurrentQuizStatus}
-            //answers={answers}
-            //addAnswers={setAnswers}
             questionsNumber={questionsNumber}
           />
-          //<div style={{ display: 'flex', flexDirection: 'column' }}>
-          //  <h2>
-          //    Question {currentQuestionNumber} of {questionsNumber}{' '}
-          //  </h2>
-          //  <label htmlFor=''>Question Name</label>
-          //  <input
-          //    type='text'
-          //    value={questionName}
-          //    onChange={(e) => setQuestionName(e.target.value)}
-          //  />
-          //  <div className='question-variants'>
-          //    <label htmlFor=''>Variants of Answer (min. 2, max. 10)</label>
-          //    <input type='text' />
-          //    <input type='text' />
-          //  </div>
-          //  <button onClick={addVariant}>Add variant</button>
-          //  {currentQuestionNumber !== questionsNumber ? (
-          //    <button onClick={handleNextQuesiton}>Next Question</button>
-          //  ) : (
-          //    //TODO: add finish function
-          //    <button onClick={handleNextQuesiton}>Finish</button>
-          //  )}
-          //</div>
         )}
         {/*<button onClick={submitQuiz}>Submit Quiz</button>*/}
       </div>
