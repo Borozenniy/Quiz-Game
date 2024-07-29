@@ -1,5 +1,5 @@
 import { QuizItem } from './QuizItem';
-import { useQuiz } from '../context/useQuiz';
+import { useQuiz } from '../../services/hooks/use-quiz';
 
 export function Quizzes() {
   const { quizzes } = useQuiz();

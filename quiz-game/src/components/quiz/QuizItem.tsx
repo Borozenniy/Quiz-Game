@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { useQuiz } from '../context/useQuiz';
+import { useQuiz } from '../../services/hooks/use-quiz';
 
 type QuizItemProps = {
   id: number;

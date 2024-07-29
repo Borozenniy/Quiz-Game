@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { QuizContextProvider } from './components/context/QuizContext';
+import { QuizContextProvider } from './components/context/quiz-provider';
 import { AppLayout } from './ui/AppLayout';
 import { Home } from './ui/Home';
 import { Error } from './ui/Error';
